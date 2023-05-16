@@ -19,7 +19,7 @@ app.get('/', (req, res, next) => {
 });
 
 //TODO: validator will need to be added here */
-app.get('/person/:', (req, res, next) => {
+app.get('/person/:name', (req, res, next) => {
   console.log('params for person endpoint: ', req.params);
   res.status(200).send('name goes here');
 });
