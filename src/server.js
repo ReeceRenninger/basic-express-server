@@ -2,9 +2,10 @@
 
 const express = require('express');
 
-//errorhandlers import
+//errorhandlers/tester import
 const errorHandler = require('./error-handlers/500');
 const notFound = require('./error-handlers/404');
+const validator = require('./error-handlers/middleware/validator');
 
 // singleton of express
 const app = express();
@@ -18,8 +19,8 @@ app.get('/', (req, res, next) => {
   res.status(200).send('Server is alive!');
 });
 
-//TODO: validator will need to be added here */
-app.get('/person/:name', (req, res, next) => {
+
+app.get('/person/:name', validator, (req, res, next) => {
   console.log('params for person endpoint: ', req.params);
   res.status(200).send('name goes here');
 });
