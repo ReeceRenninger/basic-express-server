@@ -1,9 +1,9 @@
 'use strict';
 
-//TODO: Write middleware, try to do with ternary for practice?
+//TODO: Write middleware, this should check params for a query string with name property. try to do with ternary for practice?
 module.exports = (req, res, next) => {
   // req.params.person === 'Reece' ? next() : next('Path parameter must be Reece');
-  if (req.params.person === 'Reece') {
+  if (req.query.name === 'Reece') {
     next();
   } else {
     next('Path parameter must be Reece');
