@@ -22,7 +22,7 @@ app.get('/', (req, res, next) => {
 
 
 app.get('/person', validator, (req, res, next) => {
-  console.log('Nam query for person endpoint: ', req.query);
+  console.log('Name query for person endpoint: ', req.query);
   res.status(200).send(req.query);
 });
 
