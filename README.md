@@ -1,4 +1,4 @@
-LAB - Class 02
+# LAB - Class 02
 
 Project: Basic Express Server
 Author: Reece Renninger
