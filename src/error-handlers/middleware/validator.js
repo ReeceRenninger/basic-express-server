@@ -6,7 +6,7 @@ module.exports = (req, res, next) => {
   if (req.query.name === 'Reece') {
     next();
   } else {
-    next('Path parameter must be Reece');
+    next('Search query must be Reece');
   }
 };
 
