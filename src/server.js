@@ -22,8 +22,8 @@ app.get('/', (req, res, next) => {
 
 
 app.get('/person', validator, (req, res, next) => {
-  console.log('query for person endpoint: ', req.query);
-  res.status(200).send('Name should appear!');
+  console.log('Nam query for person endpoint: ', req.query);
+  res.status(200).send(req.query);
 });
 
 
