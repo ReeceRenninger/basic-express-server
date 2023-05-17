@@ -10,7 +10,7 @@ Links and Resources
 
   [GitHub Actions ci/cd](https://github.com/ReeceRenninger/basic-express-server)
 
-  back-end server url (when applicable) RENDER SITES GO HERE
+  [back-end server url](https://basic-express-server-x480.onrender.com)
 
 Collaborators
 
@@ -21,9 +21,9 @@ Setup
 
 - PORT variable exists within the env sample
 
-How to initialize/run your application (where applicable)
-
-    clone repo to local machine, npm i, npm install jest, supertest, dotenv, express. Generate an index.js and run nodemon.
+    clone repo to local machine, npm i, npm install jest, supertest, dotenv, express.
+    
+    Generate an index.js and run nodemon.
 
 Features / Routes
 
